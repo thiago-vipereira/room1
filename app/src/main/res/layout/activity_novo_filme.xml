@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="br.com.opet.tds.roomproject_modelo1.activity.NovoFilmeActivity">
+
+    <EditText
+        android:id="@+id/editTitulo"
+        android:hint="Titulo do Livro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/editAutor"
+        android:hint="Autor do Livro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="Gênero:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Spinner
+        android:id="@+id/spinnerGenero"
+        android:entries="@array/generos_array"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></Spinner>
+    <EditText
+        android:id="@+id/editPaginas"
+        android:inputType="number"
+        android:hint="Qtd Paginas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="Status:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Spinner
+        android:id="@+id/spinnerStatus"
+        android:entries="@array/status_array"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></Spinner>
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Favorito" />
+
+    <Button
+        android:text="Salvar"
+        android:onClick="salvarFilme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
